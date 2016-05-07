@@ -1,17 +1,17 @@
 ### Site info:
 
-title : 修路的梦想
-tagline: 修路的梦想
+title : 修路的命水
+tagline: 风水还是要看，成一是真的呢
 author: winkey Li
 email: wwwgto@qq.com
-description: "The Chinese blog of Lijia Yu."
-keywords: "genomics, bioinformatics, mathematics, statistics, perl, R language, data visualization, data analysis, LaTeX, Lijia Yu"
+description: "winkey 的个人博客."
+keywords: "java, javascript, css, html, C#, mysql, mongodb, nginx, liunx, android, ios, winkey Li"
 url: "http://blog.winlv.com" # the base hostname & protocol for your site
 locale: zh_CN
 
 ### Personal info and site tools info:
-twitter_username: yulijia
-github_username:  yulijia
+#twitter_username: winkey
+#github_username:  winkey
 disqus_shortname: winkey
 favicon:     "/images/favicon.ico"
 #touch_icon:  "img/apple-touch-icon.png"
