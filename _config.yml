@@ -1,5 +1,6 @@
 ### Site info:
 
+permalink: /article/:title
 title : 修路的命水
 tagline: 风水还是要看，万一错过了呢
 author: winkey Li
