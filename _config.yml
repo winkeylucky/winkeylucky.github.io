@@ -2,7 +2,7 @@
 
 permalink: /article/:title
 title : winkey 的博客
-tagline: 风水，信，但不全信
+tagline: 而立之年
 author: winkey Li
 email: wwwgto@qq.com
 description: "winkey 的个人博客."
@@ -50,7 +50,7 @@ locales:
       Tags: "标签"
       Previous: "前一页"
       Next: "后一页"
-      PostedInCategories: "目录:"
+      PostedInCategories: "分类:"
       Taggedwith: "| 标签:"
       PostDate: "| 发表时间: "
 
