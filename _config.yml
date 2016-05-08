@@ -11,8 +11,8 @@ url: "http://blog.winlv.com" # the base hostname & protocol for your site
 locale: zh_CN
 
 ### Personal info and site tools info:
-#twitter_username: winkey
-#github_username:  winkey
+twitter_username: winkey
+github_username:  winkey
 disqus_shortname: winkey
 favicon:     "/images/favicon.ico"
 #touch_icon:  "img/apple-touch-icon.png"
