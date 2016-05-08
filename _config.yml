@@ -72,3 +72,4 @@ kramdown:
 gems: [jekyll-paginate]
 paginate: 5
 exclude: [Rakefile]
+excerpt_separator: "\n\n"
