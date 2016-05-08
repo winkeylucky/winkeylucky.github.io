@@ -190,72 +190,72 @@ SocketServer.prototype.broadcast = (data) ->
 ws-client.js 关键代码对应服务端数据包
 
 ```javascript
-	function _init() {
-	      var host = window.document.location.host;
-	      this.ws = new WebSocket('ws://'+host+'/ws?id=xx&uid=xx');
-	      this.ws.onmessage = this.onmessage.bind(this);
+function _init() {
+  var host = window.document.location.host;
+  this.ws = new WebSocket('ws://'+host+'/ws?id=xx&uid=xx');
+  this.ws.onmessage = this.onmessage.bind(this);
 
-	      this.ws.onclose = function() {
-	        return null;
-	        console.info('WsClient 关闭....');
-	        this.intervalId = setInterval(function() {
-	          // this.ws.Reconnect();
-	          //console.info("WsClient 尝试重连");
-	        }.bind(this), 5000)
-	      }.bind(this);
+  this.ws.onclose = function() {
+    return null;
+    console.info('WsClient 关闭....');
+    this.intervalId = setInterval(function() {
+      // this.ws.Reconnect();
+      //console.info("WsClient 尝试重连");
+    }.bind(this), 5000)
+  }.bind(this);
 
-	      this.ws.onopen = function() {
-	        if (this.intervalId) {
-	          clearInterval(this.intervalId);
-	          this.intervalId = 0;
-	        }
-	        // 发送登录
-	        this.send({operate: "login"});
-	      }.bind(this);
-	      this.ws.onerror = function(err) {
-	        console.error(err);
-	      }
-	   }
+  this.ws.onopen = function() {
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+      this.intervalId = 0;
+    }
+    // 发送登录
+    this.send({operate: "login"});
+  }.bind(this);
+  this.ws.onerror = function(err) {
+    console.error(err);
+  }
+ }
 
-	function onmessage(event) {
-	      var data = event.data;
-	      if (!data)
-	        return ;
-	      data = JSON.parse(data);
-	      switch(data.operate){
-	        case "setcookie":
-	          setCookie(data.key, data.value, 24*60);
-	          break;
-	        case "close”:
-	          var _temp = _.findWhere(this.listData.items, {page_id: data.page_id, user_id: data.user_id});
-	          this.listData.items.splice(_index,1);
-	          break;
-	        case "look":
-	        case "lock":
-	          // 更新or新增用户状态
-		  var _temp = _.findWhere(this.listData.items, {page_id: data.page_id, user_id: data.user_id});
-	          if (_temp){
-	             _temp.operate = data.operate;
-	          } else {
-	            this.listData.items.push(data);
-	          }
-	          break;
-	        case "unlock":
-	          this.operate = "look"
-	          var _page = this.props.app.pages.findWhere({id: data.page_id});
-	          break;
-	        case "list”:
-	          //下拉列表
-	          this.listData = data;
-	          this.checkPageStateSend();
-	          break;
-	      }
-	    }
+function onmessage(event) {
+  var data = event.data;
+  if (!data)
+    return ;
+  data = JSON.parse(data);
+  switch(data.operate){
+    case "setcookie":
+      setCookie(data.key, data.value, 24*60);
+      break;
+    case "close”:
+      var _temp = _.findWhere(this.listData.items, {page_id: data.page_id, user_id: data.user_id});
+      this.listData.items.splice(_index,1);
+      break;
+    case "look":
+    case "lock":
+      // 更新or新增用户状态
+			var _temp = _.findWhere(this.listData.items, {page_id: data.page_id, user_id: data.user_id});
+      if (_temp){
+         _temp.operate = data.operate;
+      } else {
+        this.listData.items.push(data);
+      }
+      break;
+    case "unlock":
+      this.operate = "look"
+      var _page = this.props.app.pages.findWhere({id: data.page_id});
+      break;
+    case "list”:
+      //下拉列表
+      this.listData = data;
+      this.checkPageStateSend();
+      break;
+  }
+}
 
-	function send(data) {
-	      if (!this.ws) return;
-	      this.ws.readyState == this.ws.OPEN && this.ws.send(JSON.stringify(data));
-	    }
+function send(data) {
+		if (!this.ws) return;
+		this.ws.readyState == this.ws.OPEN && this.ws.send(JSON.stringify(data));
+}
 ```
 
 ![](../../images/article/20160506/5.png)
