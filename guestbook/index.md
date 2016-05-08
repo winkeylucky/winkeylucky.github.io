@@ -12,13 +12,13 @@ permalink: /guestbook/
 
 ## 修行之道
 
->关注大师的言行，跟随大师的举动，和大师一并修行，领会大师的意境，成为真正的大师。   
+>关注大师的言行，跟随大师的举动，和大师一并修行，领会大师的意境，成为真正的大师。
 To follow the path, look to the master, follow the master, walk with the master, see through the master, become the master.
 
 ## 箴言
 
->不要哀求，学会争取，若是如此，终有所获   
-ねだるな、勝ち取れ、さすれば与えられん。   
+>不要哀求，学会争取，若是如此，终有所获
+ねだるな、勝ち取れ、さすれば与えられん。
 Don’t beg for things, do it yourself or else you won’t get anything.
 
 ## 欢迎留言:)

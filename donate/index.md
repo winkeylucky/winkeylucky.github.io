@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 layout: page
 title: 资助
 permalink: /donate/
@@ -24,6 +24,3 @@ permalink: /donate/
 |[Linode](https://www.linode.com/?r=40880647a9a4de777757923ce22028fe0c2319eb)|老牌VPS，售后服务质量好，月费用最低10美金。|
 |[Vultr](http://www.vultr.com/?ref=6825194)|月费用最低5美金，主要好处是有东京机房，大陆访问速度快。|
 |[Digital Ocean](https://www.digitalocean.com/?refcode=73e7db20103a)|服务同Linode一样，属于VPS里的新贵，月费用最低5美金。|
-
-
-
