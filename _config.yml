@@ -17,8 +17,8 @@ disqus_shortname: winkey
 favicon:     "/images/favicon.ico"
 #touch_icon:  "img/apple-touch-icon.png"
 google_analytics_key: UA-57979084-1 # put YOUR key here to enable tracking! (blank to disable)
-#aboutme: Hi, this is Lijia Yu.  # these are shown on aboutme-sidebar.
-#aboutme_photo: https://i.imgur.com/15BT1.jpg # your photo.
+aboutme: Hi, this is winkey li.  # these are shown on aboutme-sidebar.
+aboutme_photo: /images/heard.png # your photo.
 
 
 ### Site setting:
